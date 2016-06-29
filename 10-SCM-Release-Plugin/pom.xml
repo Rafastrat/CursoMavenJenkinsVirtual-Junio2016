@@ -4,6 +4,8 @@
 	<groupId>com.curso.ecosistema</groupId>
 	<artifactId>10-SCM-Release-Plugin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- Definicion del Identificador para poder asociar el user password desde 
+		la etiqueta servers de settings.xml -->
 	<properties>
 		<project.scm.id>my-scm-server</project.scm.id>
 	</properties>
@@ -21,6 +23,14 @@
 				<version>2.5.3</version>
 				<configuration>
 					<connectionUrl>${scm.developerConnection}</connectionUrl>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>1.9.4</version>
+				<configuration>
+					<connectionType>${scm.developerConnection}</connectionType>
 				</configuration>
 			</plugin>
 		</plugins>

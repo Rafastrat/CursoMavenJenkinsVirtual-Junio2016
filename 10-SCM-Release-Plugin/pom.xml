@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.curso.ecosistema</groupId>
+	<artifactId>10-SCM-Release-Plugin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<project.scm.id>my-scm-server</project.scm.id>
+	</properties>
+	<!-- Codigo fuente la aplicacion, cada version se creara un Tag -->
+	<scm>
+		<developerConnection>scm:git:https://github.com/victorherrerocazurro/10-SCM-Release-Plugin</developerConnection>
+		<connection>scm:git:https://github.com/victorherrerocazurro/10-SCM-Release-Plugin</connection>
+		<url>scm:git:https://github.com/victorherrerocazurro/10-SCM-Release-Plugin</url>
+		<tag>HEAD</tag>
+	</scm>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<connectionUrl>${scm.developerConnection}</connectionUrl>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<!-- Publicar -->
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>releases</id>
+			<name>Releases</name>
+			<url>http://localhost:8080/repository/internal</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>http://localhost:8080/repository/snapshots</url>
+			<layout>default</layout>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

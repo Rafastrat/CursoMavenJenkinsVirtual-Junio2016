@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.curso.ecosistema</groupId>
 	<artifactId>10-SCM-Release-Plugin</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<!-- Definicion del Identificador para poder asociar el user password desde 
 		la etiqueta servers de settings.xml -->
 	<properties>
@@ -14,7 +13,7 @@
 		<developerConnection>scm:git:https://github.com/victorherrerocazurro/10-SCM-Release-Plugin</developerConnection>
 		<connection>scm:git:https://github.com/victorherrerocazurro/10-SCM-Release-Plugin</connection>
 		<url>scm:git:https://github.com/victorherrerocazurro/10-SCM-Release-Plugin</url>
-		<tag>HEAD</tag>
+		<tag>10-SCM-Release-Plugin-0.0.1</tag>
 	</scm>
 	<build>
 		<plugins>

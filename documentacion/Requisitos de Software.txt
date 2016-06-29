@@ -1,0 +1,15 @@
+Maven. https://maven.apache.org/download.cgi
+
+JDK. http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+Eclipse. https://eclipse.org/downloads/
+
+Archiva. https://archiva.apache.org/download.cgi
+
+Derby. https://db.apache.org/derby/derby_downloads.html
+
+Tomcat. https://tomcat.apache.org/download-70.cgi
+
+Jenkins. https://jenkins.io/
+
+Sonarqube. http://www.sonarqube.org/downloads/

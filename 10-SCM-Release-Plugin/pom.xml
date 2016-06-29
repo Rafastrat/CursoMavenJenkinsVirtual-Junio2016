@@ -30,7 +30,7 @@
 				<artifactId>maven-scm-plugin</artifactId>
 				<version>1.9.4</version>
 				<configuration>
-					<connectionType>${scm.developerConnection}</connectionType>
+					<connectionType>${scm.connection}</connectionType>
 				</configuration>
 			</plugin>
 		</plugins>
